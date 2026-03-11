@@ -57,7 +57,7 @@
 </head>
 <body>
     <h1>三生镜隐私政策</h1>
-    <p class="last-updated"><strong>最后更新日期：</strong>2026年3月3日</p>
+    <p class="last-updated"><strong>最后更新日期：</strong>2026年3月12日</p>
     
     <h2>概述</h2>
     <p>三生镜（"我们"、"我们的"或"本应用"）重视您的隐私。本隐私政策说明我们如何收集、使用和保护您的信息。</p>
@@ -68,32 +68,42 @@
 
     <h2>1. 面部数据与AR技术</h2>
     
-    <h3>1.1 我们如何使用面部数据</h3>
-    <p>三生镜使用Apple的ARKit技术提供增强现实功能。ARKit可能在您的设备上本地处理面部几何数据，以实现面部追踪和AR效果。</p>
+    <h3>1.1 TrueDepth API 与面部数据</h3>
+    <p>三生镜使用Apple的<strong>TrueDepth API</strong>（属于ARKit框架）提供增强现实功能。TrueDepth相机系统可在您的设备上本地处理面部几何数据，以实现面部追踪和AR效果。</p>
+    
+    <h4>1.1.1 TrueDepth 数据类型</h4>
+    <p>TrueDepth API 可能访问以下数据，所有数据均在设备本地处理：</p>
+    <ul>
+        <li><strong>面部几何数据</strong>：包括面部特征点位置、面部网格顶点数据</li>
+        <li><strong>面部表情系数</strong>：用于实时面部追踪和AR效果渲染</li>
+        <li><strong>面部姿态数据</strong>：头部位置和旋转角度</li>
+    </ul>
+    
+    <h4>1.1.2 TrueDepth 数据处理原则</h4>
     
     <div class="important">
         <strong>我们向您保证：</strong>
         <ul>
-            <li>✅ <strong>我们不收集、存储或传输任何面部数据</strong></li>
-            <li>✅ 所有面部追踪都在您的设备上本地完成</li>
-            <li>✅ 没有任何面部图像或生物识别数据离开您的设备</li>
-            <li>✅ 面部数据仅存在于活跃AR会话的临时内存中</li>
-            <li>✅ 我们不会与任何第三方共享面部数据</li>
-            <li>✅ AR会话结束时，面部数据立即被丢弃</li>
+            <li>✅ <strong>我们不收集、存储或传输任何TrueDepth数据或面部数据</strong></li>
+            <li>✅ 所有TrueDepth数据处理都在您的设备上本地完成</li>
+            <li>✅ 没有任何面部图像、面部几何数据或生物识别数据离开您的设备</li>
+            <li>✅ TrueDepth数据仅存在于活跃AR会话的临时内存中</li>
+            <li>✅ 我们不会与任何第三方共享TrueDepth数据或面部数据</li>
+            <li>✅ AR会话结束时，TrueDepth数据立即被丢弃</li>
         </ul>
     </div>
     
-    <h3>1.2 面部数据的处理方式</h3>
+    <h3>1.2 TrueDepth 数据的处理方式</h3>
     <ul>
         <li><strong>处理位置：</strong>完全在设备本地处理</li>
-        <li><strong>使用的框架：</strong>Apple官方ARKit框架</li>
+        <li><strong>使用的框架：</strong>Apple官方ARKit框架（包含TrueDepth API）</li>
         <li><strong>数据传输：</strong>无</li>
         <li><strong>数据存储：</strong>无</li>
-        <li><strong>第三方SDK：</strong>无处理面部数据的第三方SDK</li>
+        <li><strong>第三方SDK：</strong>无处理TrueDepth数据或面部数据的第三方SDK</li>
     </ul>
     
-    <h3>1.3 面部数据保留期限</h3>
-    <p><strong>零保留：</strong>面部数据完全不保留。数据仅在活跃AR会话期间存在于易失性内存中，并在以下情况立即销毁：</p>
+    <h3>1.3 TrueDepth 数据保留期限</h3>
+    <p><strong>零保留：</strong>TrueDepth数据和面部数据完全不保留。数据仅在活跃AR会话期间存在于易失性内存中，并在以下情况立即销毁：</p>
     <ul>
         <li>用户关闭应用</li>
         <li>用户切换到其他应用</li>
